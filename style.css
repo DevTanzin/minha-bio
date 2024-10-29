@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700;1,700&family=Prociono&family=Rubik+Wet+Paint&display=swap');
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo geral */
+  body {
+    
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background-color: #000000;
+    color: #f1ebeb;
+    
+  }
+  
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .container {
+    background-color: rgb(0, 0, 0);
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 223, 223, 0.2);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px;
+      padding: 15px;
+    }
+  }
+  
+  /* Perfil */
+
+  .profile img.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: white;
+     
+  }
+  .profile h1 span {
+    color: #0004ff;
+  }
+  
+  .profile p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Skills */
+  .skills h2 {
+    margin-top: 20px;
+  }
+  
+  .skills .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills .icons i {
+    font-size: 32px;
+    margin: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #8d8e91;
+  }
+  
+  /* Cores Originais dos Ícones ao passar o mouse */
+  .skills .icons i:hover {
+    transform: scale(1.2);
+  }
+  
+  /* HTML5 */
+  .skills .icons .fa-html5:hover {
+    color: #E44D26;
+  }
+  
+  /* CSS3 */
+  .skills .icons .fa-css3-alt:hover {
+    color: #1572B6;
+  }
+  
+  /* JavaScript */
+  .skills .icons .fa-js:hover {
+    color: #F7DF1E;
+  }
+  
+  /* Node.js */
+  .skills .icons .fa-node:hover {
+    color: #68A063;
+  }
+  
+  /* MySQL */
+  .skills .icons .fa-database:hover {
+    color: #00758F;
+  }
+  
+  /* Links sociais */
+  .social-links img {
+    margin-top: 15px;
+    width: 100px;
+    border-radius: 10px;
+    
+  }
+  
+  .social-links .links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+  }
+  
+  .social-links .links a {
+    font-size: 32px;
+    color: #bbb;
+    
+  }
+  
+  .social-links .links a:hover {
+    color: #1da1f2;
+  }
+  
+  /* Botões */
+  .buttons .btn {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  
+  .portfolio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #001aff;
+    color: white;
+  }
+  
+  .portfolio:hover {
+    background-color: #000000;
+  }
+  
+  
+  
+  /* Música */
+  .music iframe {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    height: 90px;
+  }
+  
+  /* Botão de troca de tema */
+  .theme-toggle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background-color: #0004ff;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #000000;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 480px) {
+    .profile h1 {
+      font-size: 20px;
+    }
+  
+    .skills .icons i {
+      font-size: 28px;
+      margin: 8px;
+    }
+  
+    .buttons .btn {
+      padding: 10px;
+    }
+  
+    .theme-toggle {
+      padding: 10px;
+    }
+  }
+  

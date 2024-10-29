@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links na Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark">
+
+  <div class="container">
+    <div class="profile">
+      <img src="IMG_20230809_013446_039.jpg" alt="Perfil" class="avatar">
+      <h1>Natan <span>Shelby</span></h1>
+      <p>Web <span>developer</span></p>
+
+      
+    </div>
+
+    <div class="skills">
+      <h2></h2>
+      <div class="icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-node"></i>
+       
+      </div>
+    </div>
+
+    <div class="social-links">
+      
+      <div class="links">
+        <a  href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="btn portfolio">Meu site portfolio</a>
+      
+    </div>
+
+    <div class="music">
+      <h2>Estou escutando..</h2>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6B8pYtoS3XHrc821hExWf6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <button class="theme-toggle">Alterar Tema</button>
+  </div>
+ <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('light');
+  body.classList.toggle('dark');
+});
+
+ </script>
+</body>
+</html>
